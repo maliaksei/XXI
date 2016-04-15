@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DA9AE23-3F51-4D6D-A456-08240372B5FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XXI.Centuty.DataBusiness</RootNamespace>
+    <AssemblyName>XXI.Centuty.DataBusiness</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.1.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\LINQKit.1.1.1\lib\net45\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\packages\CommonServiceLocation.1.0.0\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository.Pattern, Version=3.3.5.1, Culture=neutral, PublicKeyToken=e598640c26ef2b0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Repository.Pattern.3.3.5.1\lib\net451\Repository.Pattern.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository.Pattern.Ef6, Version=3.3.5.1, Culture=neutral, PublicKeyToken=e598640c26ef2b0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Repository.Pattern.Ef6.3.3.5.1\lib\net451\Repository.Pattern.Ef6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\AddressHelper.cs" />
+    <Compile Include="Helpers\DescriptionHeper.cs" />
+    <Compile Include="Mappings\AddressMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\CarouselMap.cs" />
+    <Compile Include="Mappings\CategoryMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\OrderCommodityMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\OrderMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\ProductMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\ProductTypeAttributeMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\ProductTypeAttributeValueMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\ProductTypeMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappings\ReviewMap.cs" />
+    <Compile Include="Models\Data\AddressDataModel.cs" />
+    <Compile Include="Models\Data\CarouselDataModel.cs" />
+    <Compile Include="Models\Data\ProductDataModel.cs" />
+    <Compile Include="Models\Data\ProductTypeAttributeDataModel.cs" />
+    <Compile Include="Models\Data\ProductTypeAttributeValueDataModel.cs" />
+    <Compile Include="Models\Data\ProductTypeDataModel.cs" />
+    <Compile Include="Models\Data\ReviewDataModel.cs" />
+    <Compile Include="Models\Data\ShoppingCartDataModel.cs" />
+    <Compile Include="Models\Entities\AddressEntity.cs" />
+    <Compile Include="Models\Entities\CarouselEntity.cs" />
+    <Compile Include="Models\Entities\CategoryEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\OrderCommodityEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\OrderEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\ProductEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\ProductTypeAttributeEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\ProductTypeAttributeValueEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\ProductTypeEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Entities\ReviewEntity.cs" />
+    <Compile Include="Models\Enums\CompletedStatus.cs" />
+    <Compile Include="Models\Enums\OrderStatus.cs" />
+    <Compile Include="Models\Enums\PaymentMethod.cs" />
+    <Compile Include="Models\Enums\ProductStatus.cs" />
+    <Compile Include="Models\Enums\ShipingMethod.cs" />
+    <Compile Include="Models\Membership\ApplicationRole.cs" />
+    <Compile Include="Models\Membership\ApplicationUserClaim.cs" />
+    <Compile Include="Models\Membership\ApplicationUserLogin.cs" />
+    <Compile Include="Models\Membership\ApplicationUserRole.cs" />
+    <Compile Include="Models\Membership\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AddressService.cs" />
+    <Compile Include="Services\CarouselService.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\Model\ServiceResponseModel.cs" />
+    <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\ProductTypeAttributeService.cs" />
+    <Compile Include="Services\ProductTypeAttributeValueService.cs" />
+    <Compile Include="Services\ProductTypeService.cs" />
+    <Compile Include="Services\ReviewService.cs" />
+    <Compile Include="XXIDataContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mappings\Membership\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

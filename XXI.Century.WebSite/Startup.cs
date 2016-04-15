@@ -1,0 +1,12 @@
+﻿using Microsoft.Owin;
+using Owin;
+
+[assembly: OwinStartupAttribute(typeof(XXI.Century.WebSite.Startup))]
+namespace XXI.Century.WebSite
+{
+    public partial class Startup {
+        public void Configuration(IAppBuilder app) {
+            ConfigureAuth(app);
+        }
+    }
+}
