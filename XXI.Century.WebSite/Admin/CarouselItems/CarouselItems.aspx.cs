@@ -21,7 +21,7 @@ namespace XXI.Century.WebSite.Admin.CarouselItems
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         public IQueryable<CarouselEntity> GetCarouselItems()
@@ -31,12 +31,23 @@ namespace XXI.Century.WebSite.Admin.CarouselItems
 
         protected void ProductList_OnRowCommand(object sender, GridViewCommandEventArgs e)
         {
-            //int productId = Convert.ToInt32(e.CommandArgument);
-            //if (e.CommandName == "DeleteRow")
-            //{
-            //    _carouselService.ChangeProductStatus(productId, ProductStatus.Delete);
+            int productId = Convert.ToInt32(e.CommandArgument);
+           
+            if (e.CommandName == "DeleteRow")
+            {
+                var carouselModel = _carouselService.GetModelById(productId);
+                String path = Server.MapPath("~/Catalog/CarouselImages/");
 
-            //}
+                var response = _carouselService.Delete(productId);
+                if (response.CompletedStatus == CompletedStatus.Successed)
+                {
+                    System.IO.File.Delete(path + carouselModel.Image);
+                }
+                else
+                {
+                    //LabelAddStatus.Text = "Unable to add new product to database.";
+                }
+            }
             ProductList.DataBind();
         }
     }

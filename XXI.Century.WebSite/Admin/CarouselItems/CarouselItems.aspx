@@ -76,7 +76,7 @@
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
-                    <a class="btn btn-primary" href="/Admin/Products/AddProduct.aspx" id="AddButton">Добавить</a>
+                    <a class="btn btn-primary" href="/Admin/CarouselItems/AddCarouselItem.aspx" id="AddButton">Добавить</a>
                 </div>
             </div>
         </div>
