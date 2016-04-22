@@ -16,11 +16,13 @@ namespace XXI.Century.WebSite
     {
         private readonly ProductService productService;
         private readonly CategoryService categoryService;
+        private readonly CarouselService carouselService;
 
         public _Default()
         {
             productService = new ProductService();
             categoryService = new CategoryService();
+            carouselService = new CarouselService();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -38,6 +40,11 @@ namespace XXI.Century.WebSite
         public IEnumerable<CategoryItemViewModel> GetCategories()
         {
             return CategoryModelMapper.GetCategoryItems(categoryService.GetAllCategory());
+        }
+
+        public IEnumerable<CarouselViewModel> GetCarouselItems()
+        {
+            return CarouselModelMapper.GetcarouselItems(carouselService.GetAllService());
         }
 
         protected void OnPagePropertiesChanging(object sender, PagePropertiesChangingEventArgs e)

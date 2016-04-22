@@ -39,6 +39,14 @@
                                 </a>
                             </h4>
                         </div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="/Admin/CarouselItems/CarouselItems.aspx">
+                                    <span class="badge pull-right"></span>
+                                    Карусель
+                                </a>
+                            </h4>
+                        </div>
                     </div>
                     <!--/category-productsr-->
                 </div>

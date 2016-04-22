@@ -22,13 +22,13 @@ namespace XXI.Century.WebSite.Admin.CarouselItems {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl FormHorizontal;
         
         /// <summary>
-        /// InputName control.
+        /// Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Title;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -40,13 +40,13 @@ namespace XXI.Century.WebSite.Admin.CarouselItems {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// InputDescription control.
+        /// SubTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText SubTitle;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -58,13 +58,13 @@ namespace XXI.Century.WebSite.Admin.CarouselItems {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// InputPrice control.
+        /// Text control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Text;
         
         /// <summary>
         /// RequiredFieldValidator3 control.
@@ -76,22 +76,13 @@ namespace XXI.Century.WebSite.Admin.CarouselItems {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// UrltoProject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RequiredFieldValidator5;
-        
-        /// <summary>
-        /// ProductImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload ProductImage;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText UrltoProject;
         
         /// <summary>
         /// RequiredFieldValidator4 control.
@@ -101,6 +92,24 @@ namespace XXI.Century.WebSite.Admin.CarouselItems {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        
+        /// <summary>
+        /// CarouselImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload CarouselImage;
+        
+        /// <summary>
+        /// RequiredFieldValidator5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
         
         /// <summary>
         /// LabelAddStatus control.

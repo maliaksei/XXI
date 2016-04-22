@@ -2572,3 +2572,9 @@ table img.table-img {
     padding: 6px 25px;
     margin-top: 23px;
 }
+
+.img-carousel{
+    display: block; 
+    height: 441px; 
+    max-width: 100%; 
+}

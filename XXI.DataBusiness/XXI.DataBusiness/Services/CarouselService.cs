@@ -32,6 +32,32 @@ namespace XXI.Centuty.DataBusiness.Services
             return _carouselRepository.Queryable();
         }
 
+        public CarouselEntity GetModelById(int carouselId)
+        {
+            return _carouselRepository.Queryable().SingleOrDefault(x => x.Id == carouselId);
+        }
+
+        public ServiceResponseModel Delete(int carouselId)
+        {
+            _carouselRepository.Delete(carouselId);
+            try
+            {
+                _dataContext.SaveChanges();
+                return new ServiceResponseModel
+                {
+                    CompletedStatus = CompletedStatus.Successed,
+                    Data = carouselId
+                };
+            }
+            catch (Exception)
+            {
+                return new ServiceResponseModel
+                {
+                    CompletedStatus = CompletedStatus.Error
+                };
+            }
+        }
+
         public ServiceResponseModel Add(CarouselDataModel dataModel)
         {
             var entityModel = new CarouselEntity

@@ -565,10 +565,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mappings\AddressModelMap.cs" />
+    <Compile Include="Mappings\CarouselModelMapper.cs" />
     <Compile Include="Mappings\CategoryModelMapper.cs" />
     <Compile Include="Mappings\OrderModelMapper.cs" />
     <Compile Include="Mappings\ProductModelMapper.cs" />
     <Compile Include="Models\AddressItemViewModel.cs" />
+    <Compile Include="Models\CarouselViewModel.cs" />
     <Compile Include="Models\OrderCommodityViewModel.cs" />
     <Compile Include="Models\CategoryItemViewModel.cs" />
     <Compile Include="Models\IdentityHelper.cs" />
@@ -666,6 +668,7 @@
   <ItemGroup>
     <Folder Include="Administrator\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Catalog\CarouselImages\" />
     <Folder Include="Catalog\ProductImages\" />
   </ItemGroup>
   <ItemGroup>
