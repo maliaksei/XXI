@@ -12,13 +12,6 @@
                             <li data-target="#slider-carousel" data-slide-to="1"></li>
                             <li data-target="#slider-carousel" data-slide-to="2"></li>
                         </ol>
-
-
-
-
-
-
-
                         <div class="carousel-inner">
                             <asp:ListView ID="ListView1"
                                 ItemType="XXI.Century.WebSite.Models.CarouselViewModel"
@@ -28,12 +21,12 @@
                                     <div class="item <%#: Item.Active %>">
                                         <div class="col-sm-6">
                                             <h1><%#: Item.Tittle %></h1>
-                                            <h2>100% Responsive Design</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                            <button type="button" class="btn btn-default get">Get it now</button>
+                                            <h2><%#: Item.SubTitle %></h2>
+                                            <p><%#: Item.Text %> </p>
+                                            <a href="<%#: Item.UrlToProdict %>" class="btn btn-default get">Get it now</a>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="Content/images/home/girl2.jpg" class="girl img-responsive" alt="" />
+                                            <img src="/Catalog/CarouselImages/<%#:Item.Image%>"  class="girl img-carousel" alt="" /></a>
                                             <img src="Content/images/home/pricing.png" class="pricing" alt="" />
                                         </div>
                                     </div>
@@ -41,8 +34,6 @@
 
                                 <ItemSeparatorTemplate></ItemSeparatorTemplate>
                             </asp:ListView>
-
-
                         </div>
 
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">

@@ -60,8 +60,6 @@
                                     <p><b>Availability:</b> In Stock</p>
                                     <p><b>Condition:</b> New</p>
                                     <p><b>Brand:</b> E-Shop</p>
-                                    <a href="">
-                                        <img src="Content/images/product-details/share.png" class="share img-responsive" alt="" /></a>
                                 </div>
                                 <!--/product-information-->
                             </div>

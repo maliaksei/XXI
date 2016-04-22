@@ -40,13 +40,21 @@
                                 </a>
                             </h4>
                         </div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="/Admin/CarouselItems/CarouselItems.aspx">
+                                    <span class="badge pull-right"></span>
+                                    Карусель
+                                </a>
+                            </h4>
+                        </div>
                     </div>
                     <!--/category-productsr-->
                 </div>
             </div>
             <div class="col-sm-9 padding-right">
                 <div class="blog-post-area">
-                    <h2 class="title text-center">Добавление продукта</h2>
+                    <h2 class="title text-center">Добавление в карусель</h2>
                     <div class="form-horizontal" runat="server" id="FormHorizontal">
                         <div class="form-group">
                             <label for="Title" class="col-sm-2 control-label">Заголовок</label>

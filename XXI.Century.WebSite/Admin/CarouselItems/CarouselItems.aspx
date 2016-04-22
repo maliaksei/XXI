@@ -41,13 +41,21 @@
                                 </a>
                             </h4>
                         </div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="/Admin/CarouselItems/CarouselItems.aspx">
+                                    <span class="badge pull-right"></span>
+                                    Карусель
+                                </a>
+                            </h4>
+                        </div>
                     </div>
                     <!--/category-productsr-->
                 </div>
             </div>
             <div class="col-sm-9 padding-right">
                 <div class="blog-post-area">
-                    <h2 class="title text-center">Типы продуктов</h2>
+                    <h2 class="title text-center">Элементы карусели</h2>
                     <asp:HiddenField runat="server" ID="HiddenId" />
                     <asp:GridView ID="ProductList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="None" BorderWidth="0px"
                         ItemType="XXI.Centuty.DataBusiness.Models.Entities.CarouselEntity" SelectMethod="GetCarouselItems"
@@ -59,12 +67,12 @@
                         PageSize="4"
                         OnRowCommand="ProductList_OnRowCommand">
                         <Columns>
-                            <asp:TemplateField HeaderText="Название">
+                            <asp:TemplateField HeaderText="Заголовок">
                                 <ItemTemplate>
                                     <p><%#: Item.Tittle %></p>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Описание">
+                            <asp:TemplateField HeaderText="Подзаголовок">
                                 <ItemTemplate>
                                     <p><%#: Item.SubTitle %></p>
                                 </ItemTemplate>
