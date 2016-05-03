@@ -2578,3 +2578,7 @@ table img.table-img {
     height: 441px; 
     max-width: 100%; 
 }
+
+.cart-roduct-img{
+    max-height: 150px;
+}

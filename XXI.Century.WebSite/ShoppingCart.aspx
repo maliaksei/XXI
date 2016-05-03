@@ -18,7 +18,7 @@
                         <asp:TemplateField HeaderText="Элемент">
                             <ItemTemplate>
                                 <a href="">
-                                    <img alt="" src="/Catalog/ProductImages/<%#: Item.PathImage %>">
+                                    <img class="cart-roduct-img" alt="" src="/Catalog/ProductImages/<%#: Item.PathImage %>">
                                 </a>
                             </ItemTemplate>
                         </asp:TemplateField>

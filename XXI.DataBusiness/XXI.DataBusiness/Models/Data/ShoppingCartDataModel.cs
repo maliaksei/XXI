@@ -8,7 +8,6 @@ namespace XXI.Centuty.DataBusiness.Models.Data
         public ShipingMethod ShipingMethod { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
         public long AddresId { get; set; }
-
         public int PhoneNumber { get; set; }
     }
 }

@@ -43,11 +43,16 @@ namespace XXI.Century.WebSite
 
         protected void SubmitReview(object sender, EventArgs e)
         {
+            var userId = User.Identity.GetUserId<long>();
+            if(userId == 0)
+            {
+                Response.Redirect("~/Account/Login?ReturnUrl=/Product/" + productId);
+            }
             var viewHoursPopup = productDetail.FindControl("ReviewTextArea") as HtmlTextArea;
             if(viewHoursPopup != null)
             {
                
-                var userId = User.Identity.GetUserId<long>();
+               
                 var value = viewHoursPopup.Value;
 
                 var reviewDataModel = new ReviewDataModel

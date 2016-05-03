@@ -134,9 +134,16 @@ namespace XXI.Centuty.DataBusiness.Services
                 order.ShippingMethod = shoppingCartData.ShipingMethod;
                 order.PaymentMethod = shoppingCartData.PaymentMethod;
                 order.PhoneNumber = shoppingCartData.PhoneNumber;
+                order.OrderDateTime = System.DateTime.Now;
+                order.Price = GetTotalPrice(order);
                 _orderRepository.Update(order);
                 _dataContext.SaveChanges();
             }
+        }
+
+        private double GetTotalPrice(OrderEntity order)
+        {
+            return order.OrderCommodities.Select(x => x.Count * x.Product.Price).Sum();
         }
 
         public void ChangeOrderStatus(long orderId, OrderStatus orderStatus)
