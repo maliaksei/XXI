@@ -52,7 +52,7 @@ namespace XXI.Century.WebSite.Admin
             {
                 _productTypeService.AddProductType(model);
             }
-            Response.Redirect("~/Admin/ProductType/ProductTypes.aspx");
+            Response.Redirect("~/Manager/ProductType/ProductTypes.aspx");
         }
     }
 }

@@ -10,7 +10,7 @@
                         <!--category-productsr-->
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/AdminAccount">
+                                <a href="/Manager/ManagerAccount">
                                     <span class="badge pull-right"></span>
                                     Мой профиль
                                 </a>
@@ -18,7 +18,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/ProductType/ProductTypes">
+                                <a href="/Manager/ProductType/ProductTypes">
                                     <span class="badge pull-right"></span>
                                     Типы продуктов
                                 </a>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/Products/Products">
+                                <a href="/Manager/Products/Products">
                                     <span class="badge pull-right"></span>
                                     Продукты
                                 </a>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/Orders/OrderList.aspx">
+                                <a href="/Manager/Orders/OrderList.aspx">
                                     <span class="badge pull-right"></span>
                                     Заказы
                                 </a>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/CarouselItems/CarouselItems.aspx">
+                                <a href="/Manager/CarouselItems/CarouselItems.aspx">
                                     <span class="badge pull-right"></span>
                                     Карусель
                                 </a>

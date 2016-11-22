@@ -63,7 +63,7 @@ namespace XXI.Century.WebSite.Admin.CarouselItems
                     if (response.CompletedStatus == CompletedStatus.Successed)
                     {
                         var productId = (long)response.Data;
-                        Response.Redirect("/Admin/CarouselItems/CarouselItems.aspx", false);
+                        Response.Redirect("/Manager/CarouselItems/CarouselItems.aspx", false);
                     }
                     else
                     {

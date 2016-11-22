@@ -180,19 +180,19 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
-    <Content Include="Admin\CarouselItems\AddCarouselItem.aspx" />
-    <Content Include="Admin\CarouselItems\CarouselItems.aspx" />
-    <Content Include="Admin\Orders\OrderCommodities.aspx" />
-    <Content Include="Admin\Orders\OrderList.aspx" />
-    <Content Include="Admin\Products\AddProduct.aspx" />
-    <Content Include="Admin\Products\AddProductAttributesValues.aspx" />
-    <Content Include="Admin\Products\Products.aspx" />
-    <Content Include="Admin\ProductTypeAttribute\AddEditProductTypeAttribute.aspx" />
-    <Content Include="Admin\ProductType\AddEditProductType.aspx" />
-    <Content Include="Admin\AdminAccount.aspx" />
-    <Content Include="Admin\EditUserData.aspx" />
-    <Content Include="Admin\ProductTypeAttribute\ProductTypeAttriburtes.aspx" />
-    <Content Include="Admin\ProductType\ProductTypes.aspx" />
+    <Content Include="Manager\CarouselItems\AddCarouselItem.aspx" />
+    <Content Include="Manager\CarouselItems\CarouselItems.aspx" />
+    <Content Include="Manager\Orders\OrderCommodities.aspx" />
+    <Content Include="Manager\Orders\OrderList.aspx" />
+    <Content Include="Manager\Products\AddProduct.aspx" />
+    <Content Include="Manager\Products\AddProductAttributesValues.aspx" />
+    <Content Include="Manager\Products\Products.aspx" />
+    <Content Include="Manager\ProductTypeAttribute\AddEditProductTypeAttribute.aspx" />
+    <Content Include="Manager\ProductType\AddEditProductType.aspx" />
+    <Content Include="Manager\ManagerAccount.aspx" />
+    <Content Include="Manager\EditUserData.aspx" />
+    <Content Include="Manager\ProductTypeAttribute\ProductTypeAttriburtes.aspx" />
+    <Content Include="Manager\ProductType\ProductTypes.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -268,7 +268,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Admin\Web.config" />
+    <Content Include="Manager\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
@@ -445,95 +445,95 @@
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\CarouselItems\AddCarouselItem.aspx.cs">
+    <Compile Include="Manager\CarouselItems\AddCarouselItem.aspx.cs">
       <DependentUpon>AddCarouselItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\CarouselItems\AddCarouselItem.aspx.designer.cs">
+    <Compile Include="Manager\CarouselItems\AddCarouselItem.aspx.designer.cs">
       <DependentUpon>AddCarouselItem.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\CarouselItems\CarouselItems.aspx.cs">
+    <Compile Include="Manager\CarouselItems\CarouselItems.aspx.cs">
       <DependentUpon>CarouselItems.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\CarouselItems\CarouselItems.aspx.designer.cs">
+    <Compile Include="Manager\CarouselItems\CarouselItems.aspx.designer.cs">
       <DependentUpon>CarouselItems.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Orders\OrderCommodities.aspx.cs">
+    <Compile Include="Manager\Orders\OrderCommodities.aspx.cs">
       <DependentUpon>OrderCommodities.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Orders\OrderCommodities.aspx.designer.cs">
+    <Compile Include="Manager\Orders\OrderCommodities.aspx.designer.cs">
       <DependentUpon>OrderCommodities.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Orders\OrderList.aspx.cs">
+    <Compile Include="Manager\Orders\OrderList.aspx.cs">
       <DependentUpon>OrderList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Orders\OrderList.aspx.designer.cs">
+    <Compile Include="Manager\Orders\OrderList.aspx.designer.cs">
       <DependentUpon>OrderList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Products\AddProduct.aspx.cs">
+    <Compile Include="Manager\Products\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Products\AddProduct.aspx.designer.cs">
+    <Compile Include="Manager\Products\AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Products\AddProductAttributesValues.aspx.cs">
+    <Compile Include="Manager\Products\AddProductAttributesValues.aspx.cs">
       <DependentUpon>AddProductAttributesValues.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Products\AddProductAttributesValues.aspx.designer.cs">
+    <Compile Include="Manager\Products\AddProductAttributesValues.aspx.designer.cs">
       <DependentUpon>AddProductAttributesValues.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Products\Products.aspx.cs">
+    <Compile Include="Manager\Products\Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Products\Products.aspx.designer.cs">
+    <Compile Include="Manager\Products\Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ProductTypeAttribute\AddEditProductTypeAttribute.aspx.cs">
+    <Compile Include="Manager\ProductTypeAttribute\AddEditProductTypeAttribute.aspx.cs">
       <DependentUpon>AddEditProductTypeAttribute.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ProductTypeAttribute\AddEditProductTypeAttribute.aspx.designer.cs">
+    <Compile Include="Manager\ProductTypeAttribute\AddEditProductTypeAttribute.aspx.designer.cs">
       <DependentUpon>AddEditProductTypeAttribute.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ProductType\AddEditProductType.aspx.cs">
+    <Compile Include="Manager\ProductType\AddEditProductType.aspx.cs">
       <DependentUpon>AddEditProductType.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ProductType\AddEditProductType.aspx.designer.cs">
+    <Compile Include="Manager\ProductType\AddEditProductType.aspx.designer.cs">
       <DependentUpon>AddEditProductType.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminAccount.aspx.cs">
-      <DependentUpon>AdminAccount.aspx</DependentUpon>
+    <Compile Include="Manager\ManagerAccount.aspx.cs">
+      <DependentUpon>ManagerAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AdminAccount.aspx.designer.cs">
-      <DependentUpon>AdminAccount.aspx</DependentUpon>
+    <Compile Include="Manager\ManagerAccount.aspx.designer.cs">
+      <DependentUpon>ManagerAccount.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\EditUserData.aspx.cs">
+    <Compile Include="Manager\EditUserData.aspx.cs">
       <DependentUpon>EditUserData.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\EditUserData.aspx.designer.cs">
+    <Compile Include="Manager\EditUserData.aspx.designer.cs">
       <DependentUpon>EditUserData.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ProductTypeAttribute\ProductTypeAttriburtes.aspx.cs">
+    <Compile Include="Manager\ProductTypeAttribute\ProductTypeAttriburtes.aspx.cs">
       <DependentUpon>ProductTypeAttriburtes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ProductTypeAttribute\ProductTypeAttriburtes.aspx.designer.cs">
+    <Compile Include="Manager\ProductTypeAttribute\ProductTypeAttriburtes.aspx.designer.cs">
       <DependentUpon>ProductTypeAttriburtes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ProductType\ProductTypes.aspx.cs">
+    <Compile Include="Manager\ProductType\ProductTypes.aspx.cs">
       <DependentUpon>ProductTypes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ProductType\ProductTypes.aspx.designer.cs">
+    <Compile Include="Manager\ProductType\ProductTypes.aspx.designer.cs">
       <DependentUpon>ProductTypes.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />

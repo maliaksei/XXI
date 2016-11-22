@@ -68,7 +68,7 @@ namespace XXI.Century.WebSite.Admin.ProductTypeAttribute
                 model.ProductTypeId = productTypeId;
                 _productTypeAttributeService.AddProductTypeAttribute(model);
             }
-            Response.Redirect("~/Admin/ProductTypeAttribute/ProductTypeAttriburtes.aspx?Id=" + productTypeId);
+            Response.Redirect("~/Manager/ProductTypeAttribute/ProductTypeAttriburtes.aspx?Id=" + productTypeId);
         }
     }
 }

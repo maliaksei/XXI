@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Admin {
+namespace XXI.Century.WebSite.Manager {
     
     
-    public partial class AdminAccount {
+    public partial class ManagerAccount {
         
         /// <summary>
         /// TextForLastName control.

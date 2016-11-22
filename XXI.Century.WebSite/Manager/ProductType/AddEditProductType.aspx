@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminAccount.aspx.cs" Inherits="XXI.Century.WebSite.Admin.AdminAccount" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddEditProductType.aspx.cs" Inherits="XXI.Century.WebSite.Admin.AddEditProductType" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -6,11 +6,11 @@
             <div class="col-sm-3">
                 <div class="left-sidebar">
                     <h2>Меню</h2>
-                   <div class="panel-group category-products" id="accordian">
+                    <div class="panel-group category-products" id="accordian">
                         <!--category-productsr-->
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/AdminAccount">
+                                <a href="/Manager/ManagerAccount">
                                     <span class="badge pull-right"></span>
                                     Мой профиль
                                 </a>
@@ -18,7 +18,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/ProductType/ProductTypes">
+                                <a href="/Manager/ProductType/ProductTypes">
                                     <span class="badge pull-right"></span>
                                     Типы продуктов
                                 </a>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/Products/Products">
+                                <a href="/Manager/Products/Products">
                                     <span class="badge pull-right"></span>
                                     Продукты
                                 </a>
@@ -34,15 +34,15 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/Orders/OrderList.aspx">
+                                <a href="/Manager/Orders/OrderList.aspx">
                                     <span class="badge pull-right"></span>
                                     Заказы
                                 </a>
                             </h4>
                         </div>
-                       <div class="panel-heading">
+                        <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/CarouselItems/CarouselItems.aspx">
+                                <a href="/Manager/CarouselItems/CarouselItems.aspx">
                                     <span class="badge pull-right"></span>
                                     Карусель
                                 </a>
@@ -54,35 +54,26 @@
             </div>
             <div class="col-sm-9 padding-right">
                 <div class="blog-post-area">
-                    <h2 class="title text-center">Контактная информация</h2>
+                    <h2 class="title text-center">Тип продукта</h2>
                     <div class="form-horizontal">
+                        <asp:HiddenField runat="server" ID="HiddenProductTypeId" />
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Фамилия</label>
+                            <label for="InputName" class="col-sm-2 control-label">Название</label>
                             <div class="col-sm-10">
-                                <p id="TextForLastName" class="form-control-static" runat="server"></p>
+                                <input class="form-control" id="InputName" placeholder="Название" runat="server" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="InputName"
+                                    CssClass="text-danger" ErrorMessage="Поле не может быть пустым." />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Имя</label>
+                            <label for="InputDescription" class="col-sm-2 control-label">Описание</label>
                             <div class="col-sm-10">
-                                <p id="TextForFirstName" class="form-control-static" runat="server"></p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Отчество</label>
-                            <div class="col-sm-10">
-                                <p id="TextForPatronymic" class="form-control-static" runat="server"></p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <p id="TextForEmail" class="form-control-static" runat="server"></p>
+                                <input class="form-control" id="InputDescription" placeholder="Описание" runat="server" />
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <a class="btn btn-primary" href="/Admin/EditUserData.aspx">Редактиоровать</a>
+                                <a class="btn btn-primary" onserverclick="FormSubmit" runat="server">Сохранить</a>
                             </div>
                         </div>
                     </div>

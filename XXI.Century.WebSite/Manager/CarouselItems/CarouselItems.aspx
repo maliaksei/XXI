@@ -1,6 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OrderList.aspx.cs" Inherits="XXI.Century.WebSite.Admin.Orders.OrderList" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CarouselItems.aspx.cs" Inherits="XXI.Century.WebSite.Admin.CarouselItems.CarouselItems" %>
 
-<%@ Import Namespace="XXI.Centuty.DataBusiness.Helpers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -12,7 +11,7 @@
                         <!--category-productsr-->
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/AdminAccount">
+                                <a href="/Manager/ManagerAccount">
                                     <span class="badge pull-right"></span>
                                     Мой профиль
                                 </a>
@@ -20,7 +19,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/ProductType/ProductTypes">
+                                <a href="/Manager/ProductType/ProductTypes">
                                     <span class="badge pull-right"></span>
                                     Типы продуктов
                                 </a>
@@ -28,7 +27,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/Products/Products">
+                                <a href="/Manager/Products/Products">
                                     <span class="badge pull-right"></span>
                                     Продукты
                                 </a>
@@ -36,7 +35,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/Orders/OrderList.aspx">
+                                <a href="/Manager/Orders/OrderList.aspx">
                                     <span class="badge pull-right"></span>
                                     Заказы
                                 </a>
@@ -44,7 +43,7 @@
                         </div>
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a href="/Admin/CarouselItems/CarouselItems.aspx">
+                                <a href="/Manager/CarouselItems/CarouselItems.aspx">
                                     <span class="badge pull-right"></span>
                                     Карусель
                                 </a>
@@ -56,65 +55,39 @@
             </div>
             <div class="col-sm-9 padding-right">
                 <div class="blog-post-area">
-                    <h2 class="title text-center">Заказы</h2>
+                    <h2 class="title text-center">Элементы карусели</h2>
                     <asp:HiddenField runat="server" ID="HiddenId" />
-                    <div class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Тип продукта</label>
-                            <div class="col-sm-10">
-                                <asp:DropDownList ItemType="System.Web.UI.WebControls.ListItem" runat="server" AutoPostBack="true" SelectMethod="GetOrderStatuses"
-                                    ID="orderStatus" DataValueField="Value" DataTextField="Text" />
-                            </div>
-                        </div>
-                    </div>
-                    <asp:GridView ID="OrdersGrid" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="None" BorderWidth="0px"
-                        ItemType="XXI.Centuty.DataBusiness.Models.Entities.OrderEntity" SelectMethod="GetOrders"
+                    <asp:GridView ID="ProductList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="None" BorderWidth="0px"
+                        ItemType="XXI.Centuty.DataBusiness.Models.Entities.CarouselEntity" SelectMethod="GetCarouselItems"
                         CssClass="table table-condensed"
                         EnablePaging="True"
                         AllowPaging="true"
                         AllowSorting="True"
                         DataKeyNames="Id"
-                        PageSize="4">
+                        PageSize="4"
+                        OnRowCommand="ProductList_OnRowCommand">
                         <Columns>
-                            <asp:TemplateField HeaderText="Адрес">
+                            <asp:TemplateField HeaderText="Заголовок">
                                 <ItemTemplate>
-                                    <p><%#: Item.Address.AddressToString() %></p>
+                                    <p><%#: Item.Tittle %></p>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Дата">
+                            <asp:TemplateField HeaderText="Подзаголовок">
                                 <ItemTemplate>
-                                    <p><%#: Item.OrderDateTime %></p>
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Статус">
-                                <ItemTemplate>
-                                    <p><%#: Item.Status.GetDescription() %></p>
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Общая стоимость">
-                                <ItemTemplate>
-                                    <p><%#: Item.Price %></p>
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Способ доставки">
-                                <ItemTemplate>
-                                    <p><%#: Item.ShippingMethod.GetDescription() %></p>
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Способ оплаты">
-                                <ItemTemplate>
-                                    <p><%#: Item.PaymentMethod.GetDescription() %></p>
+                                    <p><%#: Item.SubTitle %></p>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="">
                                 <ItemTemplate>
-                                    <a id="editAddres" href="/Admin/Orders/OrderCommodities.aspx?OrderId=<%#:Item.Id %>">Подробнее</a>
+                                    <asp:LinkButton ID="lnkBtnDel" runat="server" CommandName="DeleteRow" OnClientClick="return confirm('Вы действительно хотите удалить запись?');" CommandArgument='<%#Eval("Id") %>'>Удалить</asp:LinkButton>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
+                    <a class="btn btn-primary" href="/Manager/CarouselItems/AddCarouselItem.aspx" id="AddButton">Добавить</a>
                 </div>
             </div>
         </div>
     </div>
 </asp:Content>
+

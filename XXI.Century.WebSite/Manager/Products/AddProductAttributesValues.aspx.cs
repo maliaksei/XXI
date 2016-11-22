@@ -75,7 +75,7 @@ namespace XXI.Century.WebSite.Admin.Products
             if (response.CompletedStatus == CompletedStatus.Successed)
             {
                 _productService.ChangeProductStatus(productId, ProductStatus.Active);
-                Response.Redirect("/Admin/Products/Products.aspx");
+                Response.Redirect("/Manager/Products/Products.aspx");
             }
 
         }

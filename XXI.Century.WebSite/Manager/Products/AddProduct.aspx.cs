@@ -82,7 +82,7 @@ namespace XXI.Century.WebSite.Admin.Products
                     if (response.CompletedStatus == CompletedStatus.Successed)
                     {
                         var productId = (long) response.Data;
-                        Response.Redirect("/Admin/Products/AddProductAttributesValues.aspx?productId=" + productId, false);
+                        Response.Redirect("/Manager/Products/AddProductAttributesValues.aspx?productId=" + productId, false);
                     }
                     else
                     {

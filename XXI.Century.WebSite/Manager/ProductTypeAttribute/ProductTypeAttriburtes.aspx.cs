@@ -26,7 +26,7 @@ namespace XXI.Century.WebSite.Admin
                 if (!String.IsNullOrEmpty(rawId) && long.TryParse(rawId, out productTypeId))
                 {
                     HiddenId.Value = productTypeId.ToString();
-                    AddButton.HRef = "/Admin/ProductTypeAttribute/AddEditProductTypeAttribute.aspx?ProductTypeId=" +
+                    AddButton.HRef = "/Manager/ProductTypeAttribute/AddEditProductTypeAttribute.aspx?ProductTypeId=" +
                                      rawId;
                 }
             }
