@@ -1,57 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddEditProductType.aspx.cs" Inherits="XXI.Century.WebSite.Manager.ProductType.AddEditProductType" %>
+<%@ Register TagPrefix="uc" TagName="ManagerMenu"
+    Src="~\Controls\ManagerAccountMenu.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="left-sidebar">
-                    <h2>Меню</h2>
-                    <div class="panel-group category-products" id="accordian">
-                        <!--category-productsr-->
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a href="/Manager/ManagerAccount">
-                                    <span class="badge pull-right"></span>
-                                    Мой профиль
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a href="/Manager/ProductType/ProductTypes">
-                                    <span class="badge pull-right"></span>
-                                    Типы продуктов
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a href="/Manager/Products/Products">
-                                    <span class="badge pull-right"></span>
-                                    Продукты
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a href="/Manager/Orders/OrderList.aspx">
-                                    <span class="badge pull-right"></span>
-                                    Заказы
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a href="/Manager/CarouselItems/CarouselItems.aspx">
-                                    <span class="badge pull-right"></span>
-                                    Карусель
-                                </a>
-                            </h4>
-                        </div>
-                    </div>
-                     <!--/category-productsr-->
-                </div>
-            </div>
+           <uc:ManagerMenu id="Menu1"  runat="server" />
             <div class="col-sm-9 padding-right">
                 <div class="blog-post-area">
                     <h2 class="title text-center">Тип продукта</h2>

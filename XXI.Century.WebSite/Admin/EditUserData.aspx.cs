@@ -36,7 +36,7 @@ namespace XXI.Century.WebSite.Admin
             user.LastName = InputLastName.Value;
             user.Patronymic = InputPatronymic.Value;
             userManager.Update(user);
-            Response.Redirect("~/Manager/ManagerAccount.aspx");
+            Response.Redirect("~/Admin/AdminAccount.aspx");
         }
     }
 }

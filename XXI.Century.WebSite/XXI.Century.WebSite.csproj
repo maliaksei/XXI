@@ -182,8 +182,10 @@
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\EditUserData.aspx" />
     <Content Include="Admin\AdminAccount.aspx" />
+    <Content Include="Controls\AdminAccountMenu.ascx" />
     <Content Include="Manager\CarouselItems\AddCarouselItem.aspx" />
     <Content Include="Manager\CarouselItems\CarouselItems.aspx" />
+    <Content Include="Controls\ManagerAccountMenu.ascx" />
     <Content Include="Manager\Orders\OrderCommodities.aspx" />
     <Content Include="Manager\Orders\OrderList.aspx" />
     <Content Include="Manager\Products\AddProduct.aspx" />
@@ -462,6 +464,13 @@
     <Compile Include="Admin\AdminAccount.aspx.designer.cs">
       <DependentUpon>AdminAccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\AdminAccountMenu.ascx.cs">
+      <DependentUpon>AdminAccountMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AdminAccountMenu.ascx.designer.cs">
+      <DependentUpon>AdminAccountMenu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Manager\CarouselItems\AddCarouselItem.aspx.cs">
       <DependentUpon>AddCarouselItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -475,6 +484,13 @@
     </Compile>
     <Compile Include="Manager\CarouselItems\CarouselItems.aspx.designer.cs">
       <DependentUpon>CarouselItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagerAccountMenu.ascx.cs">
+      <DependentUpon>ManagerAccountMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagerAccountMenu.ascx.designer.cs">
+      <DependentUpon>ManagerAccountMenu.ascx</DependentUpon>
     </Compile>
     <Compile Include="Manager\Orders\OrderCommodities.aspx.cs">
       <DependentUpon>OrderCommodities.aspx</DependentUpon>
@@ -684,6 +700,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Administrator\" />
+    <Folder Include="Admin\UserManagement\" />
     <Folder Include="App_Data\" />
     <Folder Include="Catalog\CarouselImages\" />
     <Folder Include="Catalog\ProductImages\" />
