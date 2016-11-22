@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Admin.Orders {
+namespace XXI.Century.WebSite.Manager.Orders {
     
     
     public partial class OrderCommodities {

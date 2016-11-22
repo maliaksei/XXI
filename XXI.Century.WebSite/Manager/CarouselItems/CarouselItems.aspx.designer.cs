@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Admin.CarouselItems {
+namespace XXI.Century.WebSite.Manager.CarouselItems {
     
     
     public partial class CarouselItems {

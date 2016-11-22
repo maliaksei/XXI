@@ -7,36 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Manager.ProductType {
+namespace XXI.Century.WebSite.Admin {
     
     
-    public partial class AddEditProductType {
+    public partial class EditUserData {
         
         /// <summary>
-        /// HiddenProductTypeId control.
+        /// InputLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenProductTypeId;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText InputLastName;
         
         /// <summary>
-        /// InputName control.
+        /// InputFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText InputFirstName;
         
         /// <summary>
-        /// InputDescription control.
+        /// InputPatronymic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText InputPatronymic;
+        
+        /// <summary>
+        /// InputEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText InputEmail;
     }
 }

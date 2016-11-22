@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OrderList.aspx.cs" Inherits="XXI.Century.WebSite.Admin.Orders.OrderList" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OrderList.aspx.cs" Inherits="XXI.Century.WebSite.Manager.Orders.OrderList" %>
 
 <%@ Import Namespace="XXI.Centuty.DataBusiness.Helpers" %>
 

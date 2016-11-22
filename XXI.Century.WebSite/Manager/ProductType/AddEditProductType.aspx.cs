@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Microsoft.AspNet.Identity;
-using XXI.Centuty.DataBusiness.Models.Data;
-using XXI.Centuty.DataBusiness.Services;
-
-namespace XXI.Century.WebSite.Admin
+﻿namespace XXI.Century.WebSite.Manager.ProductType
 {
+    using System;
+    using Centuty.DataBusiness.Models.Data;
+    using Centuty.DataBusiness.Services;
+
     public partial class AddEditProductType : System.Web.UI.Page
     {
         private readonly ProductTypeService _productTypeService;

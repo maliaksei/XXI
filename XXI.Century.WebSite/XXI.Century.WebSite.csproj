@@ -180,6 +180,8 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
+    <Content Include="Admin\EditUserData.aspx" />
+    <Content Include="Admin\AdminAccount.aspx" />
     <Content Include="Manager\CarouselItems\AddCarouselItem.aspx" />
     <Content Include="Manager\CarouselItems\CarouselItems.aspx" />
     <Content Include="Manager\Orders\OrderCommodities.aspx" />
@@ -269,6 +271,7 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Manager\Web.config" />
+    <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
@@ -444,6 +447,20 @@
     </Compile>
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUserData.aspx.cs">
+      <DependentUpon>EditUserData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUserData.aspx.designer.cs">
+      <DependentUpon>EditUserData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAccount.aspx.cs">
+      <DependentUpon>AdminAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAccount.aspx.designer.cs">
+      <DependentUpon>AdminAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Manager\CarouselItems\AddCarouselItem.aspx.cs">
       <DependentUpon>AddCarouselItem.aspx</DependentUpon>

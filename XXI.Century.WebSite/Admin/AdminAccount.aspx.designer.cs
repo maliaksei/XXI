@@ -7,36 +7,46 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Manager.ProductType {
+namespace XXI.Century.WebSite.Admin {
     
     
-    public partial class AddEditProductType {
+    public partial class AdminAccount
+    {
         
         /// <summary>
-        /// HiddenProductTypeId control.
+        /// TextForLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenProductTypeId;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TextForLastName;
         
         /// <summary>
-        /// InputName control.
+        /// TextForFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TextForFirstName;
         
         /// <summary>
-        /// InputDescription control.
+        /// TextForPatronymic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText InputDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TextForPatronymic;
+        
+        /// <summary>
+        /// TextForEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TextForEmail;
     }
 }

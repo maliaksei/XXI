@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OrderCommodities.aspx.cs" Inherits="XXI.Century.WebSite.Admin.Orders.OrderCommodities" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OrderCommodities.aspx.cs" Inherits="XXI.Century.WebSite.Manager.Orders.OrderCommodities" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">

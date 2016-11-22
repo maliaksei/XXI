@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using XXI.Century.WebSite.Models;
-using XXI.Centuty.DataBusiness.Models.Entities;
-using XXI.Centuty.DataBusiness.Services;
-
-namespace XXI.Century.WebSite.Admin
+﻿namespace XXI.Century.WebSite.Manager.ProductType
 {
+    using System;
+    using System.Linq;
+    using System.Web.UI.WebControls;
+    using Centuty.DataBusiness.Models.Entities;
+    using Centuty.DataBusiness.Services;
+
     public partial class ProductTupes : System.Web.UI.Page
     {
         public readonly ProductTypeService _productTypeService;

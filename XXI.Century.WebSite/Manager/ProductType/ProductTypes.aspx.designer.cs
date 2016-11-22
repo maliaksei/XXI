@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Admin {
+namespace XXI.Century.WebSite.Manager.ProductType {
     
     
     public partial class ProductTupes {

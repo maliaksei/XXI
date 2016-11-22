@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using XXI.Centuty.DataBusiness.Models.Entities;
-using XXI.Centuty.DataBusiness.Models.Enums;
-using XXI.Centuty.DataBusiness.Services;
-
-namespace XXI.Century.WebSite.Admin.Products
+﻿namespace XXI.Century.WebSite.Manager.Products
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web.UI.WebControls;
+    using Centuty.DataBusiness.Models.Entities;
+    using Centuty.DataBusiness.Models.Enums;
+    using Centuty.DataBusiness.Services;
+
     public partial class Products : System.Web.UI.Page
     {
         private readonly ProductService _productService;

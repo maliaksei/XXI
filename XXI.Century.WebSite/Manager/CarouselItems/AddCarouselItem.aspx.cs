@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using XXI.Centuty.DataBusiness.Models.Data;
-using XXI.Centuty.DataBusiness.Models.Entities;
-using XXI.Centuty.DataBusiness.Models.Enums;
-using XXI.Centuty.DataBusiness.Services;
-
-namespace XXI.Century.WebSite.Admin.CarouselItems
+﻿namespace XXI.Century.WebSite.Manager.CarouselItems
 {
+    using System;
+    using Centuty.DataBusiness.Models.Data;
+    using Centuty.DataBusiness.Models.Enums;
+    using Centuty.DataBusiness.Services;
+
     public partial class AddCarouselItem : System.Web.UI.Page
     {
         private readonly CarouselService _carouselService;

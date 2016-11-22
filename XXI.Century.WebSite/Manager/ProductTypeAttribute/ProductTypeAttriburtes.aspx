@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductTypeAttriburtes.aspx.cs" Inherits="XXI.Century.WebSite.Admin.ProductTypeAttriburtes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductTypeAttriburtes.aspx.cs" Inherits="XXI.Century.WebSite.Manager.ProductTypeAttribute.ProductTypeAttriburtes" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">

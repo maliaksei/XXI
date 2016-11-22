@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Admin.Products {
+namespace XXI.Century.WebSite.Manager.Products {
     
     
     public partial class AddProduct {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CarouselItems.aspx.cs" Inherits="XXI.Century.WebSite.Admin.CarouselItems.CarouselItems" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CarouselItems.aspx.cs" Inherits="XXI.Century.WebSite.Manager.CarouselItems.CarouselItems" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.UI.WebControls;
-using XXI.Centuty.DataBusiness.Helpers;
-using XXI.Centuty.DataBusiness.Models.Entities;
-using XXI.Centuty.DataBusiness.Models.Enums;
-using XXI.Centuty.DataBusiness.Services;
-using System.Web.ModelBinding;
-
-namespace XXI.Century.WebSite.Admin.Orders
+﻿namespace XXI.Century.WebSite.Manager.Orders
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web.ModelBinding;
+    using System.Web.UI.WebControls;
+    using Centuty.DataBusiness.Helpers;
+    using Centuty.DataBusiness.Models.Entities;
+    using Centuty.DataBusiness.Models.Enums;
+    using Centuty.DataBusiness.Services;
+
     public partial class OrderList : System.Web.UI.Page
     {
         private readonly OrderService _orderService;

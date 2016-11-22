@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XXI.Century.WebSite.Admin {
+namespace XXI.Century.WebSite.Manager.ProductTypeAttribute {
     
     
     public partial class ProductTypeAttriburtes {

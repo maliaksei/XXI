@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Web.UI.WebControls;
-using Microsoft.AspNet.Identity;
-using XXI.Century.WebSite.Mappings;
-using XXI.Century.WebSite.Models;
-using XXI.Centuty.DataBusiness.Helpers;
-using XXI.Centuty.DataBusiness.Models.Enums;
-using XXI.Centuty.DataBusiness.Services;
-
-namespace XXI.Century.WebSite.Admin.Orders
+﻿namespace XXI.Century.WebSite.Manager.Orders
 {
+    using System;
+    using System.Collections.Generic;
+    using Centuty.DataBusiness.Helpers;
+    using Centuty.DataBusiness.Models.Enums;
+    using Centuty.DataBusiness.Services;
+    using Mappings;
+    using Models;
+
     public partial class OrderCommodities : System.Web.UI.Page
     {
         public readonly OrderService _orderService;
