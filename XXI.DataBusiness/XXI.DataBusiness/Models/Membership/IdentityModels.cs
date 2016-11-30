@@ -10,8 +10,10 @@ using XXI.Centuty.DataBusiness.Models.Entities;
 
 namespace XXI.Centuty.DataBusiness.Models.Membership
 {
+    using Repository.Pattern.Infrastructure;
+
     // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    public class ApplicationUser : IdentityUser<long, ApplicationUserLogin, ApplicationUserRole, ApplicationUserClaim>
+    public class ApplicationUser : IdentityUser<long, ApplicationUserLogin, ApplicationUserRole, ApplicationUserClaim>, IObjectState
     {
         public ClaimsIdentity GenerateUserIdentity(UserManager<ApplicationUser, long> manager)
         {
@@ -32,6 +34,8 @@ namespace XXI.Centuty.DataBusiness.Models.Membership
         public virtual ICollection<AddressEntity> Addresses { get; set; }
         public virtual ICollection<OrderEntity> Orders { get; set; }
         public virtual ICollection<ReviewEntity> Reviews { get; set; }
+        [NotMapped]
+        public ObjectState ObjectState { get; set; }
     }
 
 

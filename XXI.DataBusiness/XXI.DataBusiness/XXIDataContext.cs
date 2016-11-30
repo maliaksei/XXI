@@ -27,6 +27,8 @@ namespace XXI.Centuty.DataBusiness
         public DbSet<ProductTypeAttributeEntity> ProductTypeAttribute { get; set; }
         public DbSet<ProductTypeAttributeValueEntity> ProductTypeAttributeValue { get; set; }
         public DbSet<ProductTypeEntity> ProductTypeEntities { get; set; }
+        //public DbSet<UserEntity> UserEntities { get; set; }
+        //public DbSet<RoleEntity> RoleEntities { get; set; }
 
 
 
@@ -44,6 +46,8 @@ namespace XXI.Centuty.DataBusiness
             modelBuilder.Configurations.Add(new ProductTypeAttributeMap());
             modelBuilder.Configurations.Add(new ProductTypeAttributeValueMap());
             modelBuilder.Configurations.Add(new ProductTypeMap());
+            //modelBuilder.Configurations.Add(new UserMap());
+            //modelBuilder.Configurations.Add(new RoleMap());
 
             modelBuilder.Entity<ApplicationUser>().ToTable("User")
                 .Property(x => x.Id)

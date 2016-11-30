@@ -5,6 +5,12 @@ namespace XXI.Centuty.DataBusiness.Models.Entities
 {
     public class CategoryEntity : Entity
     {
+        public CategoryEntity()
+        {
+            this.Categories = new HashSet<CategoryEntity>();
+            this.Products = new HashSet<ProductEntity>();
+        }
+
         public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

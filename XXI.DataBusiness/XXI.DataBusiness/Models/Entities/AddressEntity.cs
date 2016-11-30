@@ -6,6 +6,10 @@ namespace XXI.Centuty.DataBusiness.Models.Entities
 {
     public class AddressEntity : Entity
     {
+        public AddressEntity()
+        {
+            this.Orders = new HashSet<OrderEntity>();
+        }
         public long Id { get; set; }
         public long UserId { get; set; }
         public string Country { get; set; }
@@ -16,6 +20,5 @@ namespace XXI.Centuty.DataBusiness.Models.Entities
         public virtual ApplicationUser User { get; set; }
 
         public virtual ICollection<OrderEntity> Orders { get; set; } 
-
     }
 }

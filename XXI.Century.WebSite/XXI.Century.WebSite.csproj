@@ -182,6 +182,7 @@
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\EditUserData.aspx" />
     <Content Include="Admin\AdminAccount.aspx" />
+    <Content Include="Admin\UserManagement\Users.aspx" />
     <Content Include="Controls\AdminAccountMenu.ascx" />
     <Content Include="Manager\CarouselItems\AddCarouselItem.aspx" />
     <Content Include="Manager\CarouselItems\CarouselItems.aspx" />
@@ -464,6 +465,13 @@
     <Compile Include="Admin\AdminAccount.aspx.designer.cs">
       <DependentUpon>AdminAccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\UserManagement\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagement\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\AdminAccountMenu.ascx.cs">
       <DependentUpon>AdminAccountMenu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -700,7 +708,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Administrator\" />
-    <Folder Include="Admin\UserManagement\" />
     <Folder Include="App_Data\" />
     <Folder Include="Catalog\CarouselImages\" />
     <Folder Include="Catalog\ProductImages\" />
