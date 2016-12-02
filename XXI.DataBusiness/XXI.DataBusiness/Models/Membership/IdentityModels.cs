@@ -10,6 +10,7 @@ using XXI.Centuty.DataBusiness.Models.Entities;
 
 namespace XXI.Centuty.DataBusiness.Models.Membership
 {
+    using Enums;
     using Repository.Pattern.Infrastructure;
 
     // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
@@ -31,6 +32,7 @@ namespace XXI.Centuty.DataBusiness.Models.Membership
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string Patronymic { get; set; }
+        public UserStatus UserStatus { get; set; }
         public virtual ICollection<AddressEntity> Addresses { get; set; }
         public virtual ICollection<OrderEntity> Orders { get; set; }
         public virtual ICollection<ReviewEntity> Reviews { get; set; }

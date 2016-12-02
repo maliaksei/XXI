@@ -160,6 +160,7 @@
     <Compile Include="Models\Enums\PaymentMethod.cs" />
     <Compile Include="Models\Enums\ProductStatus.cs" />
     <Compile Include="Models\Enums\ShipingMethod.cs" />
+    <Compile Include="Models\Enums\UserStatus.cs" />
     <Compile Include="Models\Membership\ApplicationRole.cs" />
     <Compile Include="Models\Membership\ApplicationUserClaim.cs" />
     <Compile Include="Models\Membership\ApplicationUserLogin.cs" />

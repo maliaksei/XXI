@@ -85,8 +85,8 @@
                                 <asp:LoginView runat="server" ViewStateMode="Disabled">
                                     <AnonymousTemplate>
                                         <ul class="nav navbar-nav">
-                                            <li><a runat="server" href="~/Account/Register"><i class="fa fa-pencil"></i>Register</a></li>
-                                            <li><a runat="server" href="~/Account/Login"><i class="fa fa-lock"></i>Log in</a></li>
+                                            <li><a runat="server" href="~/Account/Register"><i class="fa fa-pencil"></i>Зарегистрироваться</a></li>
+                                            <li><a runat="server" href="~/Account/Login"><i class="fa fa-lock"></i>Войти</a></li>
                                         </ul>
                                     </AnonymousTemplate>
                                     <RoleGroups>
@@ -97,9 +97,9 @@
                                                         <i class="fa fa-shopping-cart"></i>
                                                         Корзина
                                                     </a></li>
-                                                    <li><a runat="server" href="~/User/UserAccountPage" title="Manage your account"><i class="fa fa-user"></i>Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                                    <li><a runat="server" href="~/User/UserAccountPage" title="Manage your account"><i class="fa fa-user"></i>Привет, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                                     <li>
-                                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Выйти" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                                     </li>
                                                 </ul>
                                             </ContentTemplate>
@@ -109,9 +109,9 @@
                                         <asp:RoleGroup Roles="Manager">
                                             <ContentTemplate>
                                                 <ul class="nav navbar-nav">
-                                                    <li><a runat="server" href="~/Manager/ManagerAccount" title="Manage your account"><i class="fa fa-user"></i>Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                                    <li><a runat="server" href="~/Manager/ManagerAccount" title="Manage your account"><i class="fa fa-user"></i>Привет, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                                     <li>
-                                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Выйти" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                                     </li>
                                                 </ul>
                                             </ContentTemplate>
@@ -121,9 +121,9 @@
                                         <asp:RoleGroup Roles="Admin">
                                             <ContentTemplate>
                                                 <ul class="nav navbar-nav">
-                                                    <li><a runat="server" href="~/Admin/AdminAccount" title="Manage your account"><i class="fa fa-user"></i>Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                                    <li><a runat="server" href="~/Admin/AdminAccount" title="Manage your account"><i class="fa fa-user"></i>Привет, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                                     <li>
-                                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Выйти" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                                     </li>
                                                 </ul>
                                             </ContentTemplate>

@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 namespace XXI.Century.WebSite.Admin.UserManagement
 {
     using Centuty.DataBusiness.Models.Entities;
+    using Centuty.DataBusiness.Models.Enums;
     using Centuty.DataBusiness.Models.Membership;
     using Centuty.DataBusiness.Services;
 
@@ -33,13 +34,17 @@ namespace XXI.Century.WebSite.Admin.UserManagement
 
         protected void ProductTypeList_OnRowCommand_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            int orderCommodityId = Convert.ToInt32(e.CommandArgument);
+            int userId = Convert.ToInt32(e.CommandArgument);
             if (e.CommandName == "DeleteRow")
             {
-               // _userService.DeleteProductTypeById(orderCommodityId);
-
+                _userService.ChangeUserStatus(userId, UserStatus.Removed);
+            }
+            if (e.CommandName == "ApproveRow")
+            {
+                _userService.ChangeUserStatus(userId, UserStatus.Active);
             }
             ProductTypeList.DataBind();
         }
+
     }
 }

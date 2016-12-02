@@ -20,26 +20,39 @@
                         PageSize="4"
                         OnRowCommand="ProductTypeList_OnRowCommand_RowCommand">
                         <Columns>
-                            <asp:TemplateField HeaderText="Название">
+                            <asp:TemplateField HeaderText="Электронный адрес">
                                 <ItemTemplate>
                                     <p><%#: Item.Email %></p>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Описание">
+                            <asp:TemplateField HeaderText="Фамилия">
+                                <ItemTemplate>
+                                    <p><%#: Item.LastName %></p>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Имя">
                                 <ItemTemplate>
                                     <p><%#: Item.FirstName %></p>
                                 </ItemTemplate>
                             </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Отчество">
+                                <ItemTemplate>
+                                    <p><%#: Item.Patronymic %></p>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Статус">
+                                <ItemTemplate>
+                                    <p><%#: Item.UserStatus %></p>
+                                </ItemTemplate>
+                            </asp:TemplateField>
                             <asp:TemplateField HeaderText="">
                                 <ItemTemplate>
-                                    <a id="editProductType" href="/Manager/ProductType/AddEditProductType.aspx?Id=<%#:Item.Id %>">Редактировать</a>
                                     <asp:LinkButton ID="lnkBtnDel" runat="server" CommandName="DeleteRow" OnClientClick="return confirm('Вы действительно хотите удалить запись?');" CommandArgument='<%#Eval("Id") %>'>Удалить</asp:LinkButton>
-                                    <a id="productTypeAttribute" href="/Manager/ProductTypeAttribute/ProductTypeAttriburtes.aspx?Id=<%#:Item.Id %>">Аттрибуты</a>
+                                    <asp:LinkButton ID="lnkBtnApprove" runat="server" CommandName="ApproveRow" OnClientClick="return confirm('Вы действительно хотите изменить статус пользователя?');" CommandArgument='<%#Eval("Id") %>'>Поддтердить регистрацию</asp:LinkButton>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
-                    <a class="btn btn-primary" href="/Manager/ProductType/AddEditProductType.aspx">Добавить</a>
                 </div>
             </div>
         </div>

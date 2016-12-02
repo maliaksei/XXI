@@ -14,9 +14,9 @@
             </div>
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a href="/Manager/ProductType/ProductTypes">
+                    <a href="/Admin/UserManagement/Users">
                         <span class="badge pull-right"></span>
-                        Типы продуктов
+                        Пользователи
                     </a>
                 </h4>
             </div>
